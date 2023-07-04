@@ -1,2 +1,2 @@
-# K8syamlScripts
+# K8s-yaml-Scripts
 kubernetes training yaml scripts
