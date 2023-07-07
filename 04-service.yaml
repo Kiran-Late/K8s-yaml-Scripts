@@ -7,8 +7,9 @@ metadata:
 spec:
   ports:
   - port: 6379
-    protocol: TCP
     targetPort: 6379
-    type: ClusterIp           # nodePort / loadBalancer
+    nodePort: 30001          # ranges between 30000 to 32767
+  # protocol: TCP            # optional
+  type: ClusterIp            # or nodePort / loadBalancer
   selector:
     tier: db
