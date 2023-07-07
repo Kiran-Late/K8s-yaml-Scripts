@@ -5,8 +5,8 @@ metadata:
 spec:
   persistentVolumeReclaimPolicy: Retain
   accessModes:
-    - ReadWriteMany
+    - ReadWriteMany                        # ReadOnlyMany / ReadWriteOnce / ReadWriteMany
   capacity:
     storage: 100Mi
-  hostPath:
-    path: /pv/log
+  hostPath:                                # awsElasticBlockStore:
+    path: /pv/log                          # volueme 
