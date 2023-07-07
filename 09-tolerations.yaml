@@ -1,3 +1,5 @@
+# Taints are applied on Nodes
+# accordingly the pod applied with same toleration as tain on node will place pod on node
 apiVersion: v1
 kind: Pod
 metadata:
