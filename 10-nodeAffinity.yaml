@@ -23,10 +23,10 @@ spec:
         name: nginx
       affinity:
         nodeAffinity:
-          requiredDuringSchedulingIgnoredDuringExecution:
+          requiredDuringSchedulingIgnoredDuringExecution:                 # prefferedDuringSchedulingIgnoredDuringExecution option is also available
             nodeSelectorTerms:
               - matchExpressions:
                 - key: color
                   values:
-                    - blue
-                  operator: In
+                    - blue                                                #array of values we can put more than one values also
+                  operator: In                                            # Operators are : In / NotIn / Exists
